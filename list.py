@@ -166,3 +166,56 @@ print(type(jami))
 
 #13 
 
+
+
+print("###################################")
+
+kop = [10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100]
+
+
+def maxwithout (kops):
+    en_katta = max(kops)
+    en_kichik = min(kops)
+    ortacha = sum(kops) / len(kops)
+    return en_katta , en_kichik , ortacha
+
+print(maxwithout(kop))
+
+
+
+################################################################
+
+contact = []
+
+
+
+def add_intormation( contact , id , name , phone , email):
+    new_Contend = {
+    "id" : id,
+    "name" : name,
+    "phone" : phone,
+    "email" : email
+    }
+    contact.append(new_Contend)
+    return contact
+
+
+add_intormation(
+    contact,
+    1,
+    "Muhammad Umar",
+    "+998937981208",
+    "codingbyumar@gmail.com"
+)
+add_intormation(
+    contact,
+    2,
+    "Muhammad Umar",
+    "+998937981208",
+    "codingbyumar@gmail.com"
+)
+
+print(contact)
+print(type(contact))
+
+
